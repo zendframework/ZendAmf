@@ -14,31 +14,47 @@
  *
  * @category   Zend
  * @package    Zend_Amf
- * @subpackage Value
+ * @subpackage Parser
  * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/**
- * @namespace
- */
-namespace Zend\Amf\Value\Messaging;
+namespace Zend\Amf\Parser;
+
+use Zend\Loader\PluginBroker,
+    Zend\Amf\Exception as AMFException;
 
 /**
- * This type of message contains information necessary to perform
- * point-to-point or publish-subscribe messaging.
+ * Broker for parser resources
  *
- * @uses       \Zend\Amf\Value\Messaging\AbstractMessage
+ * @category   Zend
  * @package    Zend_Amf
- * @subpackage Value
+ * @subpackage Parser
  * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
-class AsyncMessage extends AbstractMessage
+class ParserBroker extends PluginBroker
 {
     /**
-     * The message id to be responded to.
-     * @var String
+     * @var string Default plugin loading strategy
      */
-    public $correlationId;
+    protected $defaultClassLoader = 'Zend\Amf\Parser\ParserLoader';
+
+    /**
+     * Determine if we have a valid parser
+     * 
+     * @param  mixed $plugin 
+     * @return true
+     * @throws AMFException
+     */
+    protected function validatePlugin($plugin)
+    {
+        if (!method_exists($plugin, 'parse')) {
+            throw new AMFException(sprintf(
+                'Parsers must implement a parse() method; none defined in class "%s"',
+                get_class($plugin)
+            ));
+        }
+        return true;
+    }
 }

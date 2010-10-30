@@ -14,31 +14,34 @@
  *
  * @category   Zend
  * @package    Zend_Amf
- * @subpackage Value
+ * @subpackage Parser
  * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/**
- * @namespace
- */
-namespace Zend\Amf\Value\Messaging;
+namespace Zend\Amf\Parser;
+
+use Zend\Loader\PluginClassLoader;
 
 /**
- * This type of message contains information necessary to perform
- * point-to-point or publish-subscribe messaging.
+ * Plugin Class Loader implementation for parsers
  *
- * @uses       \Zend\Amf\Value\Messaging\AbstractMessage
+ * @category   Zend
  * @package    Zend_Amf
- * @subpackage Value
+ * @subpackage Parser
  * @copyright  Copyright (c) 2005-2010 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
-class AsyncMessage extends AbstractMessage
+class ParserLoader extends PluginClassLoader
 {
     /**
-     * The message id to be responded to.
-     * @var String
+     * @var array Pre-aliased parsers 
      */
-    public $correlationId;
+    protected $plugins = array(
+        'mysqlresult'   => 'Zend\Amf\Parser\Resource\MysqlResult',
+        'mysql_result'  => 'Zend\Amf\Parser\Resource\MysqlResult',
+        'mysqliresult'  => 'Zend\Amf\Parser\Resource\MysqliResult',
+        'mysqli_result' => 'Zend\Amf\Parser\Resource\MysqliResult',
+        'stream'        => 'Zend\Amf\Parser\Resource\Stream',
+    );
 }
