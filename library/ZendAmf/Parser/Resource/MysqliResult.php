@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Parser\Resource;
+namespace ZendAmf\Parser\Resource;
 
 /**
  * This class will convert mysql result resource to array suitable for passing

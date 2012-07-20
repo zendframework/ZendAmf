@@ -8,9 +8,9 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Util;
+namespace ZendAmf\Util;
 
-use Zend\Amf\Exception;
+use ZendAmf\Exception;
 
 /**
  * Utility class to walk through a data stream byte by byte with conventional names

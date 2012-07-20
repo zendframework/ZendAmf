@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Value;
+namespace ZendAmf\Value;
 
 /**
  * Message Headers provide context for the processing of the

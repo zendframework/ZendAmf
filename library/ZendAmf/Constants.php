@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf;
+namespace ZendAmf;
 
 /**
  * The following constants are used throughout serialization and

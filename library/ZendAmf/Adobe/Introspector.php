@@ -8,12 +8,12 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Adobe;
+namespace ZendAmf\Adobe;
 
 use DOMDocument;
 use DOMElement;
 use SplFileInfo;
-use Zend\Amf\Exception;
+use ZendAmf\Exception;
 use Zend\Code\Reflection\ClassReflection;
 use Zend\Code\Reflection\PropertyReflection;
 use Zend\Server\Reflection;
@@ -247,7 +247,7 @@ class Introspector
             }
         }
 
-        if (false !== ($asname = \Zend\Amf\Parser\TypeLoader::getMappedClassName($typename))) {
+        if (false !== ($asname = \ZendAmf\Parser\TypeLoader::getMappedClassName($typename))) {
             return $asname;
         }
 

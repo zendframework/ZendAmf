@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Value;
+namespace ZendAmf\Value;
 
 /**
  * An AMF Message contains information about the actual individual
@@ -95,7 +95,7 @@ class MessageBody
      * Set target Uri
      *
      * @param  string $targetUri
-     * @return \Zend\Amf\Value\MessageBody
+     * @return \ZendAmf\Value\MessageBody
      */
     public function setTargetUri($targetUri)
     {
@@ -120,7 +120,7 @@ class MessageBody
      * Set response Uri
      *
      * @param  string $responseUri
-     * @return \Zend\Amf\Value\MessageBody
+     * @return \ZendAmf\Value\MessageBody
      */
     public function setResponseUri($responseUri)
     {
@@ -145,7 +145,7 @@ class MessageBody
      * Set response data
      *
      * @param  mixed $data
-     * @return \Zend\Amf\Value\MessageBody
+     * @return \ZendAmf\Value\MessageBody
      */
     public function setData($data)
     {
@@ -157,7 +157,7 @@ class MessageBody
      * Set reply method
      *
      * @param  string $methodName
-     * @return \Zend\Amf\Value\MessageBody
+     * @return \ZendAmf\Value\MessageBody
      */
     public function setReplyMethod($methodName)
     {

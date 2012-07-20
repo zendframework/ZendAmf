@@ -8,11 +8,11 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Response;
+namespace ZendAmf\Response;
 
 use Zend\Amf;
-use Zend\Amf\Parser;
-use Zend\Amf\Parser\Amf0;
+use ZendAmf\Parser;
+use ZendAmf\Parser\Amf0;
 
 /**
  * Handles converting the PHP object ready for response back into AMF
@@ -39,14 +39,14 @@ class StreamResponse implements ResponseInterface
     protected $_headers = array();
 
     /**
-     * @var \Zend\Amf\Parser\OutputStream
+     * @var \ZendAmf\Parser\OutputStream
      */
     protected $_outputStream;
 
     /**
      * Instantiate new output stream and start serialization
      *
-     * @return \Zend\Amf\Response\StreamResponse
+     * @return \ZendAmf\Response\StreamResponse
      */
     public function finalize()
     {
@@ -59,8 +59,8 @@ class StreamResponse implements ResponseInterface
      * Serialize the PHP data types back into Actionscript and
      * create and AMF stream.
      *
-     * @param  \Zend\Amf\Parser\OutputStream $stream
-     * @return \Zend\Amf\Response\StreamResponse
+     * @param  \ZendAmf\Parser\OutputStream $stream
+     * @return \ZendAmf\Response\StreamResponse
      */
     public function writeMessage(Parser\OutputStream $stream)
     {
@@ -134,8 +134,8 @@ class StreamResponse implements ResponseInterface
     /**
      * Add an AMF body to be sent to the Flash Player
      *
-     * @param  \Zend\Amf\Value\MessageBody $body
-     * @return \Zend\Amf\Response\StreamResponse
+     * @param  \ZendAmf\Value\MessageBody $body
+     * @return \ZendAmf\Response\StreamResponse
      */
     public function addAmfBody(Amf\Value\MessageBody $body)
     {
@@ -156,8 +156,8 @@ class StreamResponse implements ResponseInterface
     /**
      * Add an AMF Header to be sent back to the flash player
      *
-     * @param  \Zend\Amf\Value\MessageHeader $header
-     * @return \Zend\Amf\Response\StreamResponse
+     * @param  \ZendAmf\Value\MessageHeader $header
+     * @return \ZendAmf\Response\StreamResponse
      */
     public function addAmfHeader(Amf\Value\MessageHeader $header)
     {
@@ -168,7 +168,7 @@ class StreamResponse implements ResponseInterface
     /**
      * Retrieve attached AMF message headers
      *
-     * @return array Array of \Zend\Amf\Value\MessageHeader objects
+     * @return array Array of \ZendAmf\Value\MessageHeader objects
      */
     public function getAmfHeaders()
     {
@@ -179,7 +179,7 @@ class StreamResponse implements ResponseInterface
      * Set the AMF encoding that will be used for serialization
      *
      * @param  int $encoding
-     * @return \Zend\Amf\Response\StreamResponse
+     * @return \ZendAmf\Response\StreamResponse
      */
     public function setObjectEncoding($encoding)
     {

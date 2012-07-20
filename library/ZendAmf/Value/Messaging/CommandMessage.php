@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Value\Messaging;
+namespace ZendAmf\Value\Messaging;
 
 /**
  * A message that represents an infrastructure command passed between

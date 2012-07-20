@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf;
+namespace ZendAmf;
 
 /**
  * AbstractBase abstract class for AMF authentication implementation

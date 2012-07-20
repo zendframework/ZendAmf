@@ -8,9 +8,9 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf;
+namespace ZendAmfTest;
 
-use Zend\Amf\Parser;
+use ZendAmf\Parser;
 
 /**
  * @category   Zend

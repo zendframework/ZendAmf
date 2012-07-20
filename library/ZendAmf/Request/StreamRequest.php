@@ -8,11 +8,11 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Request;
+namespace ZendAmf\Request;
 
 use Zend\Amf;
-use Zend\Amf\Parser;
-use Zend\Amf\Value;
+use ZendAmf\Parser;
+use ZendAmf\Value;
 
 /**
  * Handle the incoming AMF request by deserializing the data to php object
@@ -44,7 +44,7 @@ class StreamRequest implements RequestInterface
     protected $_objectEncoding = 0;
 
     /**
-     * @var \Zend\Amf\Parser\InputStream
+     * @var \ZendAmf\Parser\InputStream
      */
     protected $_inputStream;
 
@@ -63,7 +63,7 @@ class StreamRequest implements RequestInterface
      * Prepare the AMF InputStream for parsing.
      *
      * @param  string $request
-     * @return \Zend\Amf\Request\StreamRequest
+     * @return \ZendAmf\Request\StreamRequest
      */
     public function initialize($request)
     {
@@ -76,8 +76,8 @@ class StreamRequest implements RequestInterface
     /**
      * Takes the raw AMF input stream and converts it into valid PHP objects
      *
-     * @param  \Zend\Amf\Parser\InputStream
-     * @return \Zend\Amf\Request\StreamRequest
+     * @param  \ZendAmf\Parser\InputStream
+     * @return \ZendAmf\Request\StreamRequest
      * @throws Amf\Exception\RuntimeException
      */
     public function readMessage(Parser\InputStream $stream)
@@ -117,7 +117,7 @@ class StreamRequest implements RequestInterface
      * - LENGTH Int
      * - DATA Object
      *
-     * @return \Zend\Amf\Value\MessageHeader
+     * @return \ZendAmf\Value\MessageHeader
      * @throws Amf\Exception\RuntimeException
      */
     public function readHeader()
@@ -139,7 +139,7 @@ class StreamRequest implements RequestInterface
     /**
      * Deserialize a message body from the input stream
      *
-     * @return \Zend\Amf\Value\MessageBody
+     * @return \ZendAmf\Value\MessageBody
      * @throws Amf\Exception\RuntimeException
      */
     public function readBody()
@@ -186,8 +186,8 @@ class StreamRequest implements RequestInterface
     /**
      * Accessor to private array of message bodies.
      *
-     * @param  \Zend\Amf\Value\MessageBody $message
-     * @return \Zend\Amf\Request\StreamRequest
+     * @param  \ZendAmf\Value\MessageBody $message
+     * @return \ZendAmf\Request\StreamRequest
      */
     public function addAmfBody(Value\MessageBody $message)
     {
@@ -219,7 +219,7 @@ class StreamRequest implements RequestInterface
      * Set the object response encoding
      *
      * @param  mixed $int
-     * @return \Zend\Amf\Request\StreamRequest
+     * @return \ZendAmf\Request\StreamRequest
      */
     public function setObjectEncoding($int)
     {

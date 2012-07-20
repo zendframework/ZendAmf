@@ -8,9 +8,9 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf\Value;
+namespace ZendAmfTest\Value;
 
-use Zend\Amf\Value\Messaging;
+use ZendAmf\Value\Messaging;
 
 /**
  * @category   Zend

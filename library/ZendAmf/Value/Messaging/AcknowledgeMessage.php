@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Value\Messaging;
+namespace ZendAmf\Value\Messaging;
 
 /**
  * This is the type of message returned by the MessageBroker

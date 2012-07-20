@@ -8,12 +8,12 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Parser\Amf0;
+namespace ZendAmf\Parser\Amf0;
 
 use DateTime;
 use Zend\Amf;
-use Zend\Amf\Parser\AbstractDeserializer;
-use Zend\Amf\Parser\Exception as ParserException;
+use ZendAmf\Parser\AbstractDeserializer;
+use ZendAmf\Parser\Exception as ParserException;
 
 /**
  * Read an AMF0 input stream and convert it into PHP data types
@@ -241,7 +241,7 @@ class Deserializer extends AbstractDeserializer
      *
      * @todo   implement Typed Class mapping
      * @return object|array
-     * @throws Zend\Amf\Exception if unable to load type
+     * @throws ZendAmf\Exception if unable to load type
      */
     public function readTypedObject()
     {

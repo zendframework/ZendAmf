@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf\TestAsset;
+namespace ZendAmfTest\TestAsset;
 
 /**
  * Used to test recursive cyclic references in the serializer.

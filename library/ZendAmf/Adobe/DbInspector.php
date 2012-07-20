@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Adobe;
+namespace ZendAmf\Adobe;
 
 /**
  * This class implements authentication against XML file with roles for Flex Builder.

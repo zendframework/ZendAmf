@@ -8,10 +8,10 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Response;
+namespace ZendAmf\Response;
 
-use Zend\Amf\Parser;
-use Zend\Amf\Value;
+use ZendAmf\Parser;
+use ZendAmf\Value;
 
 /**
  * Handles converting the PHP object ready for response back into AMF
@@ -76,7 +76,7 @@ interface ResponseInterface
     /**
      * Retrieve attached AMF message headers
      *
-     * @return array Array of \Zend\Amf\Value\MessageHeader objects
+     * @return array Array of \ZendAmf\Value\MessageHeader objects
      */
     public function getAmfHeaders();
 

@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Value;
+namespace ZendAmf\Value;
 
 /**
  * Wrapper class to store an AMF3 flash.utils.ByteArray

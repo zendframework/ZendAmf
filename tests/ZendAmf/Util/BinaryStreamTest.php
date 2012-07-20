@@ -8,9 +8,9 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf\Util;
+namespace ZendAmfTest\Util;
 
-use Zend\Amf\Util;
+use ZendAmf\Util;
 
 /**
  * @category   Zend
@@ -21,7 +21,7 @@ use Zend\Amf\Util;
 class BinaryStreamTest extends \PHPUnit_Framework_TestCase
 {
     /**
-     * @expectedException Zend\Amf\Exception\ExceptionInterface
+     * @expectedException ZendAmf\Exception\ExceptionInterface
      */
     public function testConstructorShouldThrowExceptionForInvalidStream()
     {
@@ -29,7 +29,7 @@ class BinaryStreamTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Zend\Amf\Exception\ExceptionInterface
+     * @expectedException ZendAmf\Exception\ExceptionInterface
      */
     public function testReadBytesShouldRaiseExceptionForBufferUnderrun()
     {

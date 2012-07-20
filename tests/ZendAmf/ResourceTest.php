@@ -8,10 +8,10 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf;
+namespace ZendAmfTest;
 
-use Zend\Amf\Parser;
-use Zend\Amf\Server;
+use ZendAmf\Parser;
+use ZendAmf\Server;
 
 /**
  * @category   Zend
@@ -30,7 +30,7 @@ class ResourceTest extends \PHPUnit_Framework_TestCase
 
     public function setUp()
     {
-        $this->_server = new \Zend\Amf\Server();
+        $this->_server = new \ZendAmf\Server();
         $this->_server->setProduction(false);
         Parser\TypeLoader::resetMap();
     }
@@ -42,10 +42,10 @@ class ResourceTest extends \PHPUnit_Framework_TestCase
 
     protected function _callService($method, $class = 'ZendTest\\Amf\\TestAsset\\testclass')
     {
-        $request = new \Zend\Amf\Request\StreamRequest();
+        $request = new \ZendAmf\Request\StreamRequest();
         $request->setObjectEncoding(0x03);
         $this->_server->setClass($class);
-        $newBody = new \Zend\Amf\Value\MessageBody("$class.$method","/1",array("test"));
+        $newBody = new \ZendAmf\Value\MessageBody("$class.$method","/1",array("test"));
         $request->addAmfBody($newBody);
         $this->_server->handle($request);
         $response = $this->_server->getResponse();
@@ -63,7 +63,7 @@ class ResourceTest extends \PHPUnit_Framework_TestCase
      */
     public function testCtxNoResource()
     {
-        $this->setExpectedException('Zend\Amf\Exception\RuntimeException', 'serialize resource type');
+        $this->setExpectedException('ZendAmf\Exception\RuntimeException', 'serialize resource type');
         $this->_callService("returnCtx");
     }
 
@@ -100,7 +100,7 @@ class ResourceTest extends \PHPUnit_Framework_TestCase
     {
         $this->markTestSkipped('Plugin loader implementation needs to be revisited');
         Parser\TypeLoader::setResourceLoader(new TestAsset\TestResourceLoader("3"));
-        $this->setExpectedException('Zend\Amf\Exception\RuntimeException', 'Could not call parse()');
+        $this->setExpectedException('ZendAmf\Exception\RuntimeException', 'Could not call parse()');
         $resp = $this->_callService("returnCtx");
     }
 

@@ -8,12 +8,12 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Adobe;
+namespace ZendAmf\Adobe;
 
 use stdClass;
 use Zend\Acl\Acl;
 use Zend\Acl\Role;
-use Zend\Amf\AbstractAuthentication;
+use ZendAmf\AbstractAuthentication;
 use Zend\Authentication\Adapter as AuthenticationAdapter;
 use Zend\Authentication\Result as AuthenticationResult;
 

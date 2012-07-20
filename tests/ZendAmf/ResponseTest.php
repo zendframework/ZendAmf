@@ -8,11 +8,11 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf;
+namespace ZendAmfTest;
 
-use Zend\Amf\Parser;
-use Zend\Amf\Value\Messaging;
-use Zend\Amf\Value;
+use ZendAmf\Parser;
+use ZendAmf\Value\Messaging;
+use ZendAmf\Value;
 
 /**
  * @category   Zend
@@ -46,7 +46,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase
         date_default_timezone_set('America/Chicago');
         Locale::setFallback('en_US');
         Parser\TypeLoader::resetMap();
-        $this->_response = new \Zend\Amf\Response\StreamResponse();
+        $this->_response = new \ZendAmf\Response\StreamResponse();
     }
 
     /**
@@ -947,7 +947,7 @@ class ResponseTest extends \PHPUnit_Framework_TestCase
         $this->_response->finalize();
         $response = $this->_response->getResponse();
 
-        $request = new \Zend\Amf\Request\StreamRequest();
+        $request = new \ZendAmf\Request\StreamRequest();
         $request->initialize($response);
         $headers = $request->getAmfHeaders();
         $this->assertEquals(2, count($headers));

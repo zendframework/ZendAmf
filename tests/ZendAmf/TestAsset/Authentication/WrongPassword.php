@@ -8,9 +8,9 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf\TestAsset\Authentication;
+namespace ZendAmfTest\TestAsset\Authentication;
 
-use Zend\Amf\AbstractAuthentication;
+use ZendAmf\AbstractAuthentication;
 use Zend\Authentication\Result;
 
 class WrongPassword extends AbstractAuthentication

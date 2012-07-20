@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf\Value;
+namespace ZendAmfTest\Value;
 
 /**
  * @category   Zend
@@ -20,7 +20,7 @@ class MessageBodyTest extends \PHPUnit_Framework_TestCase
 {
     public function setUp()
     {
-        $this->body = new \Zend\Amf\Value\MessageBody('/foo', '/bar', 'data');
+        $this->body = new \ZendAmf\Value\MessageBody('/foo', '/bar', 'data');
     }
 
     public function testMessageBodyShouldAllowSettingData()
@@ -32,7 +32,7 @@ class MessageBodyTest extends \PHPUnit_Framework_TestCase
 
     public function testMessageBodyShouldAttachDataAsIs()
     {
-        $object = new \ZendTest\Amf\TestAsset\SerializableData();
+        $object = new \ZendAmfTest\TestAsset\SerializableData();
         $this->body->setData($object);
         $this->assertSame($object, $this->body->getData());
     }

@@ -8,15 +8,15 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Parser\Amf3;
+namespace ZendAmf\Parser\Amf3;
 
 use DateTime;
 use DOMDocument;
 use SimpleXMLElement;
 use Zend\Amf;
-use Zend\Amf\Parser;
-use Zend\Amf\Parser\AbstractSerializer;
-use Zend\Amf\Value;
+use ZendAmf\Parser;
+use ZendAmf\Parser\AbstractSerializer;
+use ZendAmf\Value;
 
 /**
  * Detect PHP object type and convert it to a corresponding AMF3 object type
@@ -206,7 +206,7 @@ class Serializer extends AbstractSerializer
      * Send string to output stream
      *
      * @param  string $string
-     * @return \Zend\Amf\Parser\Amf3\Serializer
+     * @return \ZendAmf\Parser\Amf3\Serializer
      */
     public function writeString(&$string)
     {
@@ -231,7 +231,7 @@ class Serializer extends AbstractSerializer
     /**
      * Send ByteArray to output stream
      *
-     * @param  string|\Zend\Amf\Value\ByteArray  $data
+     * @param  string|\ZendAmf\Value\ByteArray  $data
      * @return Serializer
      * @throws Parser\Exception\OutOfBoundsException
      */

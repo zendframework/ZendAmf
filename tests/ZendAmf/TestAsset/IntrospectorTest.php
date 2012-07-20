@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf\TestAsset;
+namespace ZendAmfTest\TestAsset;
 
 /**
  * @category   Zend
@@ -55,7 +55,7 @@ class IntrospectorTest
     /**
      * Barbaz
      *
-     * @param  ZendTest\Amf\TestAsset\IntrospectorTestCustomType $arg
+     * @param  ZendAmfTest\TestAsset\IntrospectorTestCustomType $arg
      * @return boolean
      */
     public function barbaz($arg)
@@ -65,7 +65,7 @@ class IntrospectorTest
     /**
      * Bazbat
      *
-     * @return ZendTest\Amf\TestAsset\IntrospectorTestExplicitType
+     * @return ZendAmfTest\TestAsset\IntrospectorTestExplicitType
      */
     public function bazbat()
     {

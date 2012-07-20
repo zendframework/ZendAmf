@@ -8,12 +8,12 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf;
+namespace ZendAmfTest;
 
 use Zend\Acl;
-use Zend\Amf\Value;
-use Zend\Amf\Value\Messaging;
-use Zend\Amf\Request;
+use ZendAmf\Value;
+use ZendAmf\Value\Messaging;
+use ZendAmf\Request;
 use Zend\Acl\Role;
 use Zend\Amf;
 use Zend\Authentication;
@@ -38,7 +38,7 @@ class AuthTest extends \PHPUnit_Framework_TestCase
     {
         $this->_server = new Amf\Server();
         $this->_server->setProduction(false);
-        \Zend\Amf\Parser\TypeLoader::resetMap();
+        \ZendAmf\Parser\TypeLoader::resetMap();
         $this->_acl = new Acl\Acl();
     }
 

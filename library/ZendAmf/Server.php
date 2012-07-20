@@ -8,9 +8,9 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf;
+namespace ZendAmf;
 
-use Zend\Amf\Exception;
+use ZendAmf\Exception;
 use Zend\Authentication\AuthenticationService;
 use Zend\Loader\Broker;
 use Zend\Loader\PluginBroker;
@@ -55,13 +55,13 @@ class Server implements ServerDefinition
 
     /**
      * Request processed
-     * @var null|Zend\Amf\Request\StreamRequest
+     * @var null|ZendAmf\Request\StreamRequest
      */
     protected $_request = null;
 
     /**
      * Class to use for responses
-     * @var null|Zend\Amf\Response\StreamResponse
+     * @var null|ZendAmf\Response\StreamResponse
      */
     protected $_response;
 
@@ -99,7 +99,7 @@ class Server implements ServerDefinition
     /**
      * Authentication handler object
      *
-     * @var \Zend\Amf\AbstractAuthentication
+     * @var \ZendAmf\AbstractAuthentication
      */
     protected $_auth;
 

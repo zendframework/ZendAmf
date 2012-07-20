@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Parser;
+namespace ZendAmf\Parser;
 
 use Zend\Loader\PluginClassLoader;
 
@@ -25,10 +25,10 @@ class ParserLoader extends PluginClassLoader
      * @var array Pre-aliased parsers
      */
     protected $plugins = array(
-        'mysqlresult'   => 'Zend\Amf\Parser\Resource\MysqlResult',
-        'mysql_result'  => 'Zend\Amf\Parser\Resource\MysqlResult',
-        'mysqliresult'  => 'Zend\Amf\Parser\Resource\MysqliResult',
-        'mysqli_result' => 'Zend\Amf\Parser\Resource\MysqliResult',
-        'stream'        => 'Zend\Amf\Parser\Resource\Stream',
+        'mysqlresult'   => 'ZendAmf\Parser\Resource\MysqlResult',
+        'mysql_result'  => 'ZendAmf\Parser\Resource\MysqlResult',
+        'mysqliresult'  => 'ZendAmf\Parser\Resource\MysqliResult',
+        'mysqli_result' => 'ZendAmf\Parser\Resource\MysqliResult',
+        'stream'        => 'ZendAmf\Parser\Resource\Stream',
     );
 }

@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf\TestAsset\Authentication;
+namespace ZendAmfTest\TestAsset\Authentication;
 
 use Zend\Acl\Acl as ZendAcl;
 

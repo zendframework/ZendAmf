@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Parser;
+namespace ZendAmf\Parser;
 
 /**
  * Base abstract class from which AMF serializers may descend.

@@ -8,12 +8,12 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Parser\Amf3;
+namespace ZendAmf\Parser\Amf3;
 
 use DateTime;
 use Zend\Amf;
-use Zend\Amf\Parser;
-use Zend\Amf\Parser\AbstractDeserializer;
+use ZendAmf\Parser;
+use ZendAmf\Parser\AbstractDeserializer;
 
 /**
  * Read an AMF3 input stream and convert it into PHP data types.

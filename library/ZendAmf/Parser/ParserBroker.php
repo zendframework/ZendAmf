@@ -8,9 +8,9 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Parser;
+namespace ZendAmf\Parser;
 
-use Zend\Amf\Exception as AMFException;
+use ZendAmf\Exception as AMFException;
 use Zend\Loader\PluginBroker;
 
 /**
@@ -25,7 +25,7 @@ class ParserBroker extends PluginBroker
     /**
      * @var string Default plugin loading strategy
      */
-    protected $defaultClassLoader = 'Zend\Amf\Parser\ParserLoader';
+    protected $defaultClassLoader = 'ZendAmf\Parser\ParserLoader';
 
     /**
      * Determine if we have a valid parser

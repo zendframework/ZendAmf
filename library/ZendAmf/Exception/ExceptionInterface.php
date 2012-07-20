@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Exception;
+namespace ZendAmf\Exception;
 
 /**
  * @category   Zend

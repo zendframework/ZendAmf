@@ -8,11 +8,11 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf;
+namespace ZendAmfTest;
 
-use Zend\Amf\Parser;
-use Zend\Amf\Value;
-use Zend\Amf\Value\Messaging;
+use ZendAmf\Parser;
+use ZendAmf\Value;
+use ZendAmf\Value\Messaging;
 
 
 /**
@@ -44,7 +44,7 @@ class RequestTest extends \PHPUnit_Framework_TestCase
         date_default_timezone_set("America/Chicago");
         \Zend\Locale\Locale::setFallback('en');
         Parser\TypeLoader::resetMap();
-        $this->_request = new \Zend\Amf\Request\StreamRequest();
+        $this->_request = new \ZendAmf\Request\StreamRequest();
     }
 
     /**

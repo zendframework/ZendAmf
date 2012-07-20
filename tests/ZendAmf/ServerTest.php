@@ -8,14 +8,14 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf;
+namespace ZendAmfTest;
 
 use Zend\Amf;
-use Zend\Amf\Parser;
-use Zend\Amf\Value;
-use Zend\Amf\Request;
-use Zend\Amf\Value\Messaging;
-use Zend\Amf\Response;
+use ZendAmf\Parser;
+use ZendAmf\Value;
+use ZendAmf\Request;
+use ZendAmf\Value\Messaging;
+use ZendAmf\Response;
 use Zend\Session;
 
 require_once __DIR__ . '/TestAsset/Server/serverFunctions.php';
@@ -88,7 +88,7 @@ class ServerTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Zend\Amf\Exception\ExceptionInterface
+     * @expectedException ZendAmf\Exception\ExceptionInterface
      */
     public function testSetClassShouldRaiseExceptionOnInvalidClassname()
     {
@@ -96,7 +96,7 @@ class ServerTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Zend\Amf\Exception\ExceptionInterface
+     * @expectedException ZendAmf\Exception\ExceptionInterface
      */
     public function testSetClassShouldRaiseExceptionOnInvalidClasstype()
     {
@@ -104,7 +104,7 @@ class ServerTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Zend\Amf\Exception\ExceptionInterface
+     * @expectedException ZendAmf\Exception\ExceptionInterface
      */
     public function testSetClassShouldRaiseExceptionOnDuplicateMethodName()
     {
@@ -163,7 +163,7 @@ class ServerTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Zend\Amf\Exception\ExceptionInterface
+     * @expectedException ZendAmf\Exception\ExceptionInterface
      */
     public function testAddFunctionShouldRaiseExceptionForInvalidFunctionName()
     {
@@ -171,7 +171,7 @@ class ServerTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Zend\Amf\Exception\ExceptionInterface
+     * @expectedException ZendAmf\Exception\ExceptionInterface
      */
     public function testAddFunctionShouldRaiseExceptionOnDuplicateMethodName()
     {
@@ -711,7 +711,7 @@ class ServerTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Zend\Amf\Exception\ExceptionInterface
+     * @expectedException ZendAmf\Exception\ExceptionInterface
      */
     public function testSetRequestShouldRaiseExceptionOnInvalidStringClassName()
     {
@@ -726,7 +726,7 @@ class ServerTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Zend\Amf\Exception\ExceptionInterface
+     * @expectedException ZendAmf\Exception\ExceptionInterface
      */
     public function testSetRequestShouldRaiseExceptionOnInvalidRequestObjects()
     {
@@ -743,7 +743,7 @@ class ServerTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Zend\Amf\Exception\ExceptionInterface
+     * @expectedException ZendAmf\Exception\ExceptionInterface
      */
     public function testSetResponseShouldRaiseExceptionOnInvalidStringClassName()
     {
@@ -758,7 +758,7 @@ class ServerTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException Zend\Amf\Exception\ExceptionInterface
+     * @expectedException ZendAmf\Exception\ExceptionInterface
      */
     public function testSetResponseShouldRaiseExceptionOnInvalidResponseObjects()
     {
@@ -1019,13 +1019,13 @@ class ServerTest extends \PHPUnit_Framework_TestCase
 
     public function testRaisesExceptionOnNonClassStringBrokerArgument()
     {
-        $this->setExpectedException('Zend\Amf\Exception\ExceptionInterface', 'could not resolve');
+        $this->setExpectedException('ZendAmf\Exception\ExceptionInterface', 'could not resolve');
         $this->_server->setBroker('__foo__');
     }
 
     public function testRaisesExceptionOnNonBrokerObjectArgument()
     {
-        $this->setExpectedException('Zend\Amf\Exception\ExceptionInterface', 'implement');
+        $this->setExpectedException('ZendAmf\Exception\ExceptionInterface', 'implement');
         $this->_server->setBroker($this);
     }
 }

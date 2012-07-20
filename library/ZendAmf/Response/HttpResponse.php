@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Response;
+namespace ZendAmf\Response;
 
 /**
  * Creates the proper http headers and send the serialized AMF stream to standard out.

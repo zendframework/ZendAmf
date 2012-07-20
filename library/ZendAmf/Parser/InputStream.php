@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Parser;
+namespace ZendAmf\Parser;
 
 /**
  * InputStream is used to iterate at a binary level through the AMF request.
@@ -19,6 +19,6 @@ namespace Zend\Amf\Parser;
  * @package    Zend_Amf
  * @subpackage Parser
  */
-class InputStream extends \Zend\Amf\Util\BinaryStream
+class InputStream extends \ZendAmf\Util\BinaryStream
 {
 }

@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Request;
+namespace ZendAmf\Request;
 
 /**
  * AMF Request object -- Request via HTTP

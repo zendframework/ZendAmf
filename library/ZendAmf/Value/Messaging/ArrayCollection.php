@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Value\Messaging;
+namespace ZendAmf\Value\Messaging;
 
 /**
  * Type encapsulating Flex ArrayCollection

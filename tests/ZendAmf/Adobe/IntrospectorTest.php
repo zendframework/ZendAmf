@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf\Adobe;
+namespace ZendAmfTest\Adobe;
 
 /**
  * @category   Zend
@@ -20,7 +20,7 @@ class IntrospectorTest extends \PHPUnit_Framework_TestCase
 {
     public function setUp()
     {
-        $this->introspector = new \Zend\Amf\Adobe\Introspector();
+        $this->introspector = new \ZendAmf\Adobe\Introspector();
     }
 
     public function testIntrospectionDoesNotIncludeConstructor()

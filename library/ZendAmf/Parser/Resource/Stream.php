@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Parser\Resource;
+namespace ZendAmf\Parser\Resource;
 
 /**
  * This class will convert stream resource to string by just reading it

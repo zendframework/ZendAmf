@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Value;
+namespace ZendAmf\Value;
 
 /**
  * Zend_Amf_Value_TraitsInfo
@@ -99,7 +99,7 @@ class TraitsInfo
      * Add an additional property
      *
      * @param  string $name
-     * @return \Zend\Amf\Value\TraitsInfo
+     * @return \ZendAmf\Value\TraitsInfo
      */
     public function addProperty($name)
     {
@@ -111,7 +111,7 @@ class TraitsInfo
      * Add all properties of the class.
      *
      * @param  array $props
-     * @return \Zend\Amf\Value\TraitsInfo
+     * @return \ZendAmf\Value\TraitsInfo
      */
     public function addAllProperties(array $props)
     {

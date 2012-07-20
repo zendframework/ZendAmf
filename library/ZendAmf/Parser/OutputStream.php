@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Parser;
+namespace ZendAmf\Parser;
 
 /**
  * Iterate at a binary level through the AMF response
@@ -19,7 +19,7 @@ namespace Zend\Amf\Parser;
  * @package    Zend_Amf
  * @subpackage Parser
  */
-class OutputStream extends \Zend\Amf\Util\BinaryStream
+class OutputStream extends \ZendAmf\Util\BinaryStream
 {
     /**
      * Constructor

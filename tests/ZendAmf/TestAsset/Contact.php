@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf\TestAsset;
+namespace ZendAmfTest\TestAsset;
 
 /**
  * Test Class for class mapping tests.

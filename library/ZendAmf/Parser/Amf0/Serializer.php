@@ -8,12 +8,12 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Parser\Amf0;
+namespace ZendAmf\Parser\Amf0;
 
 use DateTime;
 use Zend\Amf;
-use Zend\Amf\Parser;
-use Zend\Amf\Parser\AbstractSerializer;
+use ZendAmf\Parser;
+use ZendAmf\Parser\AbstractSerializer;
 
 /**
  * Serializer PHP misc types back to there corresponding AMF0 Type Marker.

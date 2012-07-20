@@ -8,10 +8,10 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Request;
+namespace ZendAmf\Request;
 
-use Zend\Amf\Parser;
-use Zend\Amf\Value;
+use ZendAmf\Parser;
+use ZendAmf\Value;
 
 /**
  * Handle the incoming AMF request by deserializing the data to php object

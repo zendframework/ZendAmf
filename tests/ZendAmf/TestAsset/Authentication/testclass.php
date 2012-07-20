@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf\TestAsset\Authentication;
+namespace ZendAmfTest\TestAsset\Authentication;
 
 class testclass
 {

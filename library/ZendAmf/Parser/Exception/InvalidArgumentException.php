@@ -8,9 +8,9 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Parser\Exception;
+namespace ZendAmf\Parser\Exception;
 
-use Zend\Amf\Exception;
+use ZendAmf\Exception;
 
 /**
  * @category   Zend

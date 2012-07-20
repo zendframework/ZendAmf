@@ -8,9 +8,9 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf\Value;
+namespace ZendAmfTest\Value;
 
-use Zend\Amf\Value;
+use ZendAmf\Value;
 
 /**
  * @category   Zend

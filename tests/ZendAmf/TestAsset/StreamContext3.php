@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf\TestAsset;
+namespace ZendAmfTest\TestAsset;
 
 class StreamContext3
 {

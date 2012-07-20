@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace ZendTest\Amf\TestAsset\Server;
+namespace ZendAmfTest\TestAsset\Server;
 
 /**
  * testFunction

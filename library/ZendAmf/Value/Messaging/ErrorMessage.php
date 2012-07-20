@@ -8,7 +8,7 @@
  * @package   Zend_Amf
  */
 
-namespace Zend\Amf\Value\Messaging;
+namespace ZendAmf\Value\Messaging;
 
 /**
  * Creates the error message to report to flex the issue with the call
