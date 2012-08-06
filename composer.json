@@ -19,7 +19,6 @@
             "url": "http://packages.zendframework.com/"
         }
     ],
-    "target-dir": "Zend/Amf",
     "require": {
         "php": ">=5.3.3"
     }
