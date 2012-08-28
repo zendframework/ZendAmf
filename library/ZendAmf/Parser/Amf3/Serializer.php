@@ -13,7 +13,7 @@ namespace ZendAmf\Parser\Amf3;
 use DateTime;
 use DOMDocument;
 use SimpleXMLElement;
-use Zend\Amf;
+use ZendAmf as Amf;
 use ZendAmf\Parser;
 use ZendAmf\Parser\AbstractSerializer;
 use ZendAmf\Value;
